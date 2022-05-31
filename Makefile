@@ -1,11 +1,8 @@
-fibonacci: fibonacci.c
-	@gcc -o fibonacci fibonacci.c
-
-pintas: pintas.c
-	@gcc -o pintas pintas.c
+factorial: factorial.c
+	@gcc -o factorial factorial.c
 
 clean:
-	@rm fibonacci pintas
+	@rm factorial
 
-test: fibonacci pintas
+test: factorial
 	@bash tests.sh
